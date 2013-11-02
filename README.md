@@ -1,5 +1,9 @@
+This is a fork from <a href="https://github.com/danlec/Trello-Bookmarklet">danlec/Trello-Bookmarklet</a> to add support for <a href="http://www.assembla.com">Assembla</a> tickets.
+
+It adds a card with the name "#nn ticket_title" based on the current Assembla ticket (as modal popup or in full page mode)
+
 ```javascript
-javascript:(function(a){window.trelloAppKey="optional";window.trelloIdList="optional";var b=a.createElement("script");b.src="https://raw.github.com/danlec/Trello-Bookmarklet/master/trello_bookmarklet.js";a.getElementsByTagName("head")[0].appendChild(b)})(document);
+javascript:(function(a){window.trelloAppKey="optional";window.trelloIdList="optional";var b=a.createElement("script");b.src="https://raw.github.com/josemarcenaro/Trello-Bookmarklet/master/trello_bookmarklet.js";a.getElementsByTagName("head")[0].appendChild(b)})(document);
 ```
 
 This is a <a href="http://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a> you can use to create a card in <a href="https://trello.com">Trello</a> from ...
