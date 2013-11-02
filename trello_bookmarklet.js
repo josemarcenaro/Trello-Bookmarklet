@@ -12,6 +12,11 @@
       // We're looking at a FogBugz case
       name = goBug.ixBug + ": " + goBug.sTitle
 
+    } else if ($('span.ticket-number').length && $('div.ticket-summary h1').length){
+        
+        // we're looking at an Assembla ticket
+        name = $('span.ticket-number').text().trim() + ' '+ $('div.ticket-summary h1').text().trim();
+    
     } else if ($("#issue_header_summary").length){
 
       // We're looking at a JIRA case in an older JIRA installation
